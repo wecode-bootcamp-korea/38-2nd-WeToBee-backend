@@ -10,6 +10,5 @@ CREATE TABLE spot_savings (
     updated_at TIMESTAMP NULL ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (tourist_spot_id) REFERENCES tourist_spots(id) ON DELETE CASCADE
 )
-
 -- migrate:down
 DROP TABLE spot_savings;
